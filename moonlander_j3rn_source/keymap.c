@@ -20,15 +20,13 @@ enum custom_keycodes {
   ST_MACRO_DENY,
 };
 
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_moonlander(
-    KC_UNDS,        KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_LBRACKET,                                    KC_RBRACKET,    KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_BSPACE,
-    KC_DELETE,      KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_MINUS,                                       KC_EQUAL,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLASH,
-    KC_ESCAPE,      KC_A,           MT(MOD_LSFT, KC_S),MT(MOD_LCTL, KC_D),MT(MOD_LALT, KC_F),KC_G,  KC_HYPR,                                                                        KC_MEH,         KC_H,           MT(MOD_RALT, KC_J),MT(MOD_RCTL, KC_K),MT(MOD_RSFT, KC_L),KC_SCOLON,      KC_QUOTE,
-    KC_LSHIFT,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RSHIFT,
-    KC_LCTRL,       KC_WWW_BACK,    KC_WWW_FORWARD, KC_LEFT,        KC_RIGHT,       KC_PSCREEN,                                                                                                     MT(MOD_LCTL, KC_ESCAPE),KC_UP,          KC_DOWN,        KC_HOME,        KC_END,         KC_CYCLE_LAYERS,
+    KC_UNDS,        KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_LBRC,                                        KC_RBRC,        KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_BACKSPACE,
+    KC_DELETE,      KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_MINUS,                                       KC_EQUAL,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BACKSLASH,
+    KC_ESCAPE,      KC_A,           MT(MOD_LSFT, KC_S),MT(MOD_LCTL, KC_D),MT(MOD_LALT, KC_F),KC_G,  KC_HYPR,                                        KC_MEH,         KC_H,           MT(MOD_RALT, KC_J),MT(MOD_RCTL, KC_K),MT(MOD_RSFT, KC_L),KC_SCLN,KC_QUOTE,
+    KC_LEFT_SHIFT,  KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RIGHT_SHIFT,
+    KC_LEFT_CTRL,   KC_WWW_BACK,    KC_WWW_FORWARD, KC_LEFT,        KC_RIGHT,       KC_PSCR,                                                                                        MT(MOD_LCTL, KC_ESCAPE),KC_UP,  KC_DOWN,        KC_HOME,        KC_END,         KC_CYCLE_LAYERS,
     KC_SPACE,       KC_LGUI,        MO(MEDIA),                      MO(SYM),        KC_TAB,         KC_ENTER
   ),
   [GAME] = LAYOUT_moonlander(
